@@ -57,6 +57,15 @@ function drawline(ctx, p1, p2) {
     ctx.stroke();
 }
 
+function draw_flower_line(ctx, p1, p2) {
+    ctx= document.getElementById("myCanvas").getContext("2d");
+    ctx.strokeStyle = "#eabee7"
+    ctx.beginPath();
+    ctx.moveTo(p1.x, p1.y); 
+    ctx.lineTo(p2.x, p2.y); 
+    ctx.stroke();
+}
+
 /*----------------------TREE DRAWING-------------------------------*/
 function Tree(center, length, thickness, theta) {
     this.center = center, 
@@ -88,8 +97,8 @@ function draw_flower(center, length, angle, color) {
     part2.push(new Point(center.x + ll*Math.cos(angle + Math.PI*3/2), center.y + ll*Math.sin(angle + Math.PI*3/2)));
 
     for(var i=0; i<3; i++) {
-        drawline(this.screen, part1[i], part1[i+1]);
-        drawline(this.screen, part2[i], part2[i+1]); 
+        draw_flower_line(this.screen, part1[i], part1[i+1], 1);
+        draw_flower_line(this.screen, part2[i], part2[i+1], 1); 
     }
 }
 
