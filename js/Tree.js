@@ -8,16 +8,25 @@ function onload() {
     var y = window.innerHeight / 2;
     tree = new Tree(new Point(x,window.innerHeight), 800, 2, Math.PI/6);
     tree.draw_tree(); 
-}
 
-function changeGradient(e) {
-    canvas = document.getElementById("myCanvas");
-    var x = e.clientX;
-    var y = e.clientY;
-     window.innerWidth; 
-    var tocol = "rgb(232, 179, " + (x/window.innerWidth) * 100 + ")";
-    canvas.style.background = "linear-gradient(to bottom,  #003399 0%, " + tocol + "100%)"; 
+    //draw the ground 
+    var array = new Array(51).join('0').split('').map(parseFloat); 
+    random_koch(0, 49, 50, 1, array);
+    ctx= document.getElementById("myCanvas").getContext("2d");
+    ctx.beginPath();
+    ctx.moveTo(0, window.innerHeight - 30);
+    var x_inc = window.innerWidth/array.length;  
+    for(var i=0; i<array.length; i++) {
+       ctx.lineTo(x_inc * i, window.innerHeight - Math.abs(array[i] )- 30) 
+    }  
+    //complete the square
+    ctx.lineTo(window.innerWidth, window.innerHeight);
+    ctx.fillStyle="#eabee7"
 
+    ctx.lineTo(0, window.innerHeight); 
+    ctx.lineTo(0, window.innerHeight - 30); 
+    ctx.closePath();
+    ctx.fill(); 
 }
 
 /*-----------------------TOOLBOX-----------------------------*/

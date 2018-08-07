@@ -1,7 +1,5 @@
 body, html {
-    height:100%;
-    margin:0px;
-    padding:0px;
+    overflow-x:hidden;
 }
 
 html, h1, h2, body, form, fieldset, table, tr, td, img {
@@ -11,21 +9,36 @@ html, h1, h2, body, form, fieldset, table, tr, td, img {
 
 
 #myCanvas {
-    position:fixed; 
+    position:absolute; 
     left:200px;
     z-index:3; 
 }
 
 .title {
+    position:absolute;
     color:white; 
 }
+
+#landing{
+    position:relative; 
+    height:100%; 
+    width:100%;
+}
 #main {
-    position:fixed;     
+    position:relative;     
     left:200px; 
     top:150px;
+    padding:0px;
 }
 
+#story {
+    position:relative; 
+    height:500px;
+    padding:0px;
+    background-color:#eabee7; 
+}
 .headlink {
+    position:relative;
     color:white;
     font-size:30px; 
     background-color:rgba(255,255,255,0.3); 
