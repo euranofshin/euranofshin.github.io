@@ -11,7 +11,7 @@ function onload() {
 
     //draw the ground 
     var array = new Array(51).join('0').split('').map(parseFloat); 
-    random_koch(0, 49, 50, 1, array);
+    random_koch(0, 49, 50, 0.75, array);
     ctx= document.getElementById("myCanvas").getContext("2d");
     ctx.beginPath();
     ctx.moveTo(0, window.innerHeight - 30);
