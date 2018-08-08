@@ -18,7 +18,18 @@ html, h1, h2, body, form, fieldset, table, tr, td, img {
     position:absolute;
     color:white; 
 }
+.cause {
+    font-size:40px;
+    color:black;
+    margin-right:10px;
+}
 
+.effect {
+    font-size:40px;
+    color:black;
+    margin-left:10px;
+    font-style:italic;  
+}
 #landing{
     position:relative; 
     height:100%; 
@@ -26,8 +37,8 @@ html, h1, h2, body, form, fieldset, table, tr, td, img {
 }
 #main {
     position:relative;     
-    left:200px; 
-    top:150px;
+    left:10%; 
+    top:15%;
     padding:0px;
 }
 
