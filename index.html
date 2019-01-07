@@ -9,9 +9,11 @@
     
 </head>
 <body onload="onload()">
+    <div class="stars"></div>
+    <div class="twinkling"></div> 
+
+    <!-- landing page -->
     <div id="landing">
-        <div class="stars"></div>
-        <div class="twinkling"></div> 
         <canvas id="myCanvas" width="500" height="500" >
         </canvas>
        
@@ -19,19 +21,89 @@
             <h1  style="font-size:100px;" class="title">hi, I'm Eura</h1>
             <div style="position:absolute; top:150px;">
                 <h2 style="font-size:30px; position:relative;" class="title">ask about my... </h2>
-                <h2 class="headlink">story </h2>
-                <h2 class="headlink">projects </h2>
-                <h2 class="headlink">resume </h2>
-                <h2 class="headlink">adventures </h2>
-                <h2 class="headlink">contact </h2>
+                <h2 class="headlink" id="projectLink">projects </h2>
+                <h2 class="headlink" id="resumeLink">resume </h2>
+                <h2 class="headlink" id="contactLink">contact </h2>
                 <h2 style="font-size:30px; position:relative;" class="title">or try <i>refreshing the page</i> </h2>
+            </div>
+            <div style="position:absolute; top:400px; right:20%; width:23%;"> 
+                <p style="color:white;">
+                    This is a computational art project from my algorithms course. I decomposed "perfect" fractals to 
+                    randomly create natural designs, such as trees.  
+                </p>
             </div>
         </div>
     </div>
 
 
-    <div id = "story" >
+    <!-- overview page -->
+    <div id = "projects" class="section">
+        <h1 class="header"> PROJECTS </h1>
+
+        <div style="width:100%;">
+            <p style="font-size:25px; width:50%; text-align:justify; display:block; color:black;">
+            I use computer science to challenge the way we explore the biological world. 
+            As a researcher, I ask questions about how we can use tools in computing to: 
+            </p>
+        </div>
+
+        <div style=" margin-top:100px; width:100%; display:inline-block; margin: 0 auto; margin-top:30px;"> 
+            <div style="margin-top:20px; margin:auto; border-collapse:separate; border-spacing:20px; width:50%; margin:0; float:left;"> 
+                <div class="projectBox" style="background-image: url('images/ct.png'); background-position:center;" onclick="loadCAD()">
+                    <div>make medical diagnoses?</div>
+                </div>
+                <div class="projectBox" style="background-image: url('images/forest.jpeg'); background-position:center;" onclick="loadEco()">
+                    <p>monitor changing ecosystems?</p>
+                </div>
+
+                <div class="projectBox" style="background-image: url('images/bulb.jpeg'); background-position:center;" onclick="loadSmart()">
+                    <p>conserve energy in smart homes?</p>
+                </div>
+                <br>
+                <div class="projectBox" style="background-image: url('images/heart.jpeg'); background-position:center;" onclick="loadMedicine()">
+                    <p>personalize medicine?</p>
+                </div>
+            </div>
+            
+            <div id="projectTable" style="width:50%; margin:0; margin-left:3%; float:left; background-image:url('images/ct.png');">
+                <div id="projectPanel">
+                    <p id="projectTitle"></p> 
+                    <div id="projectDetails" style="display:inline;">
+                        <p id="projectCompany"></p> 
+                        <p id="projectDates"></p> 
+                    </div> 
+                    <div id="projectDescription">
+                        <p id="projectText">
+                        </p>
+                        <ul id="topics" style="text-align:left;">
+                        </ul>
+
+                    </div> 
+                </div>
+                <div id="projectOutcomes">
+                    <button class="outcome">SPIE Medical Imaging 2019</button> 
+                </div> 
+            </div>
+        </div>
         
     </div>
+
+
+    <div class="section" id="resume">
+        <h1 class="header"> RESUME </h1>
+        <embed src="Eurashin_Resume.pdf" style="width:50%; height:50%; margin-top:5%;"
+             type='application/pdf'>
+    </div>
+
+    <div class="section" id="contact">
+        <h1 class="header"> CONTACT </h1>
+        <div style="border:solid; width:50%; padding:10px; margin:auto; margin-top:10%;">
+            <h2 class="header" style="font-size:25px; width:100%; text-align:center;"> Let's grab coffee! </h2>
+            <h2 class="header" style="font-size:25px; width:100%; text-align:center;"> Email: eura.shin@uky.edu </h2>
+        </div>
+        <div id="pictures" style="margin-top:5%;">
+        </div>
+    </div>
+
 </body>
 </html>

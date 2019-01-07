@@ -1,4 +1,10 @@
+var description, company, date, title, topics, picfile, outcomes; 
+
 function onload() {
+    $("#resumeLink").click(toResume);
+    $("#contactLink").click(toContact);
+    $("#projectsLink").click(toProjects);
+
     canvas = document.getElementById("myCanvas");
     canvas.width = window.innerWidth; 
     canvas.height = window.innerHeight;
@@ -6,7 +12,7 @@ function onload() {
     canvas.style.left =" 0px"; 
     var x = window.innerWidth / 2;
     var y = window.innerHeight / 2;
-    tree = new Tree(new Point(x,window.innerHeight), 800, 2, Math.PI/6);
+    tree = new Tree(new Point(x,window.innerHeight), window.innerHeight, 2, Math.PI/6);
     tree.draw_tree(); 
 
     //draw the ground 
@@ -21,13 +27,127 @@ function onload() {
     }  
     //complete the square
     ctx.lineTo(window.innerWidth, window.innerHeight);
-    ctx.fillStyle="#eabee7"
+    ctx.fillStyle="#ffffff"
 
     ctx.lineTo(0, window.innerHeight); 
     ctx.lineTo(0, window.innerHeight - 30); 
     ctx.closePath();
-    ctx.fill(); 
+    ctx.fill();
+    
+    loadPics();
+    loadCAD();
 }
+
+
+/*------------------page elements-----------------*/
+function loadPics() {
+    var width = document.getElementById("contact").offsetWidth; 
+    var numPics = 8; 
+
+    var dim = width/numPics;
+    var picBar = document.getElementById("pictures");
+    var filenames = [
+    'images/pic1.jpg', 
+    'images/pic2.jpg', 
+    'images/pic3.jpg', 
+    'images/pic4.jpg',
+    'images/pic5.jpg',
+    'images/pic6.jpg',
+    'images/pic7.jpg',
+    'images/pic8.jpg'];
+
+    for(var i=0; i<numPics; i++) {
+        var img = new Image(dim, dim);
+        img.src = filenames[i]; 
+        picBar.appendChild(img); 
+    }
+
+}
+
+function loadCAD() {
+   description =  "During my REU internship at DePaul, I worked on reducing the cost in training a CADx system to recognize lung cancer with Dr. Raicu. Some relevant topics were:";
+   title = "Computer-Aided Diagnosis (CADx) Systems";
+   date = "May 2018 - Present";
+   company = "DePaul University";
+   topics = ["Active learning", "Noisy/imperfect labels", "Measuring uncertainty"
+   , "Weakly supervised learning"];
+   picfile = "images/CT.jpg";
+   outcomes = ['SPIE Medical Imaging 2019'];
+   insertProject();
+}
+
+function loadEco() {
+   description =  "A food web may be modelled as a mathematical network. This property can be used to compare food webs between ecosystems and learn more about how they are structured and change over time. In my semester abroad at New Zealand, I worked with Dr. Stouffer and Bernat Bramon to explore this concept.";
+   title = "Ecological Network Alignment";
+   date = "Feb. 2018 - May 2018";
+   company = "University of Canterbury";
+   topics = ["Network alignment", "Ecological data"];
+   picfile = "images/FOREST.jpeg";
+   outcomes = ["Class final presentation"]; 
+   insertProject();
+}
+
+function loadSmart() {
+   description = "How do we make smart technology easy to use for everyone? In this project, I work with Dr. Silvestri to make smart home technology marketable by factoring user preferences into the ML system." 
+   title = "Scalable smart outlets";
+   date = "Dec. 2017 - Present";
+   company = "University of Kentucky";
+   topics = ["Stream-based active learning", "Social-behavioral modeling"];
+   picfile = "images/HOME.jpg";
+   outcomes = []; 
+   insertProject();
+
+}
+
+function loadMedicine() {
+   description = "Atrial fibrillation is the most common sustained arrythmia. In this project with Dr. Loewe, we created a simulation of AF on a computational model of the heart."; 
+   title = "Modelling Atrial Fibrillation (AF)";
+   date = "May 2016 - August 2018";
+   company = "Karlsruhe Institute of Technology";
+   topics = ["Computational modelling", "Wave propogation (eikonal equation)"];
+   picfile = "images/HEART.jpeg";
+   outcomes = ["1st Place Kentucky Academy of Sciences 2016"]; 
+   insertProject();
+
+}
+
+function insertProject() {
+   document.getElementById("projectTitle").innerHTML = title; 
+   document.getElementById("projectText").innerHTML = description; 
+   document.getElementById("projectCompany").innerHTML = company; 
+   document.getElementById("projectDates").innerHTML = date; 
+   document.getElementById("projectTable").style.backgroundImage = "url('" + picfile + "')"; 
+   $("#topics").empty();
+   for(var i=0; i<topics.length; i++) {
+      $("#topics").append('<li>' + topics[i] + '</li>');
+   }
+    
+   $("#projectOutcomes").empty();
+   $("#projectOutcomes").append('<p style="font-style:italic; font-size: 25px; color:white;"> Outcomes </p>');
+   for(var i=0; i<outcomes.length; i++) {
+       $("#projectOutcomes").append('<button class="outcome">' + outcomes[i] + '</button>'); 
+   }
+}
+
+function toProjects() {
+    $('html,body').animate({
+           scrollTop: $("#projects").offset().top
+    });
+}
+
+function toResume() {
+    $('html,body').animate({
+           scrollTop: $("#resume").offset().top
+    });
+}
+
+function toContact() {
+    $('html,body').animate({
+           scrollTop: $("#contact").offset().top
+    });
+}
+
+
 
 /*-----------------------TOOLBOX-----------------------------*/
 function randInt(min, max) {
@@ -59,7 +179,7 @@ function random_koch(left, right, displacement, roughness, array){
 
 function drawline(ctx, p1, p2) {
     ctx= document.getElementById("myCanvas").getContext("2d");
-    ctx.strokeStyle = "#FFFFFF"
+    ctx.strokeStyle = "#ffffff"
     ctx.beginPath();
     ctx.moveTo(p1.x, p1.y); 
     ctx.lineTo(p2.x, p2.y); 
@@ -68,7 +188,7 @@ function drawline(ctx, p1, p2) {
 
 function draw_flower_line(ctx, p1, p2) {
     ctx= document.getElementById("myCanvas").getContext("2d");
-    ctx.strokeStyle = "#eabee7"
+    ctx.strokeStyle = "#ffffff"
     ctx.beginPath();
     ctx.moveTo(p1.x, p1.y); 
     ctx.lineTo(p2.x, p2.y); 
@@ -301,3 +421,5 @@ function draw_lines(array, screen, color, point1, point2, thickness){
 
         return(point_arr);
 }
+
+

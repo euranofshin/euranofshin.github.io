@@ -1,3 +1,9 @@
+:root {
+    --dark: #770757;
+    --master: #ffccff;
+    --neutral: white; 
+}
+
 body, html {
     overflow-x:hidden;
 }
@@ -7,6 +13,28 @@ html, h1, h2, body, form, fieldset, table, tr, td, img {
     font-weight:lighter;
 }
 
+*{
+    margin:0 auto;
+    padding:0px;
+}
+
+
+.projectBox {
+    width:150px;    
+    height:150px;
+    border-style:solid;
+    border-radius:50%;
+    margin-left:30px;
+    margin-right:30px;
+    
+    vertical-align:middle;
+    display:table-cell;
+    text-align:center;
+
+    background:var(--neutral);
+    background-size:300px; 
+    font-family:Courier, sans-serif;
+}
 
 #myCanvas {
     position:absolute; 
@@ -14,26 +42,99 @@ html, h1, h2, body, form, fieldset, table, tr, td, img {
     z-index:3; 
 }
 
-.title {
-    position:absolute;
-    color:white; 
-}
-.cause {
-    font-size:40px;
-    color:black;
-    margin-right:10px;
+#projectTable {
+    position:absolute; 
+    left:40%; 
+    width:50%; 
+    height: 60%;
+    border-style:solid;
+    border-color:black;
+    margin:auto;
+
+    background-color:var(--neutral); 
+    background-position:center; 
+    background-size:100%;
+    background-repeat:no-repeat; 
+    display:inline-block;
 }
 
-.effect {
-    font-size:40px;
-    color:black;
-    margin-left:10px;
-    font-style:italic;  
+#projectTitle {
+    width:100%; 
+    font-family:Courier, sans-serif;
+    font-size:25px;     
+    height:20%;
+    border-bottom: solid;
+    margin-bottom:20px;
 }
+
+#projectPanel {
+    width:40%;
+    float:left; 
+    height:100%; 
+    background-color: rgba(255,255,255,0.8);
+}
+
+#projectOutcomes {
+    width:30px; 
+    height:100%;
+    float:right;
+    background-color: rgba(0,0,0,0.7);
+    vertical-align:top;
+    color:white;
+    visibility:hidden; 
+    transition: 0.5s ease; 
+}
+
+#projectTable:hover #projectOutcomes {
+      width: 60%;
+      left:0;
+      visibility:visible;
+}   
+
+.outcome {
+    width:90%; 
+    height:15%; 
+    text:18px; 
+    font-family: Courier, sans-serif;
+    text-transform:uppercase; 
+    margin:5%;
+}
+
+li{
+    font-size:14px;
+    list-style-position: inside;
+}
+
+#projectDetails {
+    font-size:18px;
+    height:20%;
+}
+
+#projectDescription {
+    padding:10px;
+    font-size:14px; 
+    height:60%;
+    text-align:left;
+}
+
+.title {
+    position:absolute;
+    color:var(--neutral); 
+}
+.header {
+    text-align:left;
+    left:10%;
+    margin-top:10px;
+    font-style:bold; 
+    font-family: Courier, sans-serif;
+    font-size:40px;
+}
+
 #landing{
     position:relative; 
     height:100%; 
     width:100%;
+    margin:0px;
 }
 #main {
     position:relative;     
@@ -42,15 +143,36 @@ html, h1, h2, body, form, fieldset, table, tr, td, img {
     padding:0px;
 }
 
-#story {
+.section {
     position:relative; 
-    height:500px;
+    background-color:var(--neutral); 
+    width:90%;
+    height:100%; 
+    text-align:center; 
+    margin:0px;
     padding:0px;
-    background-color:#eabee7; 
+    margin-left:5%;
+    margin-right:5%;
 }
+
+tr {
+    padding:0px;
+    margin:0px;
+}
+
+.icon {
+    height:50px;
+    width:50px; 
+    padding-left:10%;
+    padding-right:10%;
+    margin-top:5%;
+}
+
+
+
 .headlink {
     position:relative;
-    color:white;
+    color:var(--neutral);
     font-size:30px; 
     background-color:rgba(255,255,255,0.3); 
     margin:5px;
