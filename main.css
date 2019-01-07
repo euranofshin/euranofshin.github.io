@@ -21,7 +21,7 @@ overflow-x:hidden;
 .toTop {
     width:40px; 
     height:40px;
-    position:absolute; 
+    position:fixed;  
     bottom:10px; 
     right:5px; 
 }
@@ -100,9 +100,10 @@ overflow-x:hidden;
 
 .outcome {
     width:90%; 
-    height:15%; 
     text:18px; 
     font-family: Courier, sans-serif;
+    background:var(--neutral);
+    vertical-align:center;
     text-transform:uppercase; 
     margin:5%;
 }
