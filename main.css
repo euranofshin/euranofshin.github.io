@@ -1,18 +1,18 @@
 :root {
     --dark: #770757;
-    --master: #ffccff;
+    --master: black;
     --neutral: white; 
 }
 
-body, html {
-    overflow-x:hidden;
-}
 
 html, h1, h2, body, form, fieldset, table, tr, td, img {
     font-family: Arial,sans-serif;
     font-weight:lighter;
 }
 
+body{
+overflow-x:hidden;
+}
 *{
     margin:0 auto;
     padding:0px;
@@ -128,6 +128,7 @@ li{
     font-style:bold; 
     font-family: Courier, sans-serif;
     font-size:40px;
+    color:var(--master)
 }
 
 #landing{
@@ -175,6 +176,7 @@ tr {
     color:var(--neutral);
     font-size:30px; 
     background-color:rgba(255,255,255,0.3); 
+    z-index:4;
     margin:5px;
     width:200px;
 }

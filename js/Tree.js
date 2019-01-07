@@ -1,4 +1,4 @@
-var description, company, date, title, topics, picfile, outcomes; 
+var description, company, date, title, topics, picfile, outcomes, outLink; 
 
 function onload() {
     $("#resumeLink").click(toResume);
@@ -73,6 +73,7 @@ function loadCAD() {
    , "Weakly supervised learning"];
    picfile = "images/CT.jpg";
    outcomes = ['SPIE Medical Imaging 2019'];
+   outLink = ["files/spie-manuscript.pdf"];
    insertProject();
 }
 
@@ -125,7 +126,7 @@ function insertProject() {
    $("#projectOutcomes").empty();
    $("#projectOutcomes").append('<p style="font-style:italic; font-size: 25px; color:white;"> Outcomes </p>');
    for(var i=0; i<outcomes.length; i++) {
-       $("#projectOutcomes").append('<button class="outcome">' + outcomes[i] + '</button>'); 
+       $("#projectOutcomes").append('<a href="' + outLink[i] + '"> <div class="outcome">' + outcomes[i] + '</div></a>'); 
    }
 }
 
