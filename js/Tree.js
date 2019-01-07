@@ -4,6 +4,7 @@ function onload() {
     $("#resumeLink").click(toResume);
     $("#contactLink").click(toContact);
     $("#projectsLink").click(toProjects);
+    $(".toTop").click(toTop);
 
     canvas = document.getElementById("myCanvas");
     canvas.width = window.innerWidth; 
@@ -145,6 +146,12 @@ function toResume() {
 function toContact() {
     $('html,body').animate({
            scrollTop: $("#contact").offset().top
+    });
+}
+
+function toTop() {
+    $('html,body').animate({
+           scrollTop: 0
     });
 }
 
