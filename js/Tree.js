@@ -253,7 +253,7 @@ function random_flower(center, olength, thickness, start_theta, color){ //the st
     //make the top branch off many times
     for(var i=0; i<randInt(1,3); i++) { 
         var theta = (randInt(50,100)/100) *  (Math.PI/4);
-        if(olength > 2){ //stop branching
+        if(olength > 8){ //stop branching
             var length = olength * randInt(50, 70)/ 100;
             var random_bin = randInt(0, 2);
             var new_theta; 
