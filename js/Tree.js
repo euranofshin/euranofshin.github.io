@@ -74,7 +74,7 @@ function loadCAD() {
    , "Weakly supervised learning"];
    picfile = "images/CT.jpg";
    outcomes = ['SPIE Medical Imaging 2019'];
-   outLink = ["files/spie-manuscript.pdf"];
+   outLink = ["https://spie.org/MI/conferencedetails/computer-aided-diagnosis#2512803"];
    insertProject();
 }
 
@@ -109,6 +109,7 @@ function loadMedicine() {
    topics = ["Computational modelling", "Wave propogation (eikonal equation)"];
    picfile = "images/HEART.jpeg";
    outcomes = ["1st Place Kentucky Academy of Sciences 2016"]; 
+   outLink = ["files/Atrial Fibrillation 2016.pdf"];
    insertProject();
 
 }
