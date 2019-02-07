@@ -1,6 +1,7 @@
 var description, company, date, title, topics, picfile, outcomes, outLink; 
 
 function onload() {
+    $("#bioLink").click(toBio);
     $("#resumeLink").click(toResume);
     $("#contactLink").click(toContact);
     $("#projectsLink").click(toProjects);
@@ -36,7 +37,7 @@ function onload() {
     ctx.fill();
     
     loadPics();
-    loadCAD();
+//    loadCAD();
 }
 
 
@@ -147,6 +148,12 @@ function toResume() {
 function toContact() {
     $('html,body').animate({
            scrollTop: $("#contact").offset().top
+    });
+}
+
+function toBio() {
+    $('html,body').animate({
+           scrollTop: $("#bio").offset().top
     });
 }
 

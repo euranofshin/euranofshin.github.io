@@ -1,0 +1,41 @@
+
+        <!--
+        <div style=" margin-top:100px; width:100%; margin: 0 auto; margin-top:30px;"> 
+            <div style="margin-top:20px; margin:auto; border-collapse:separate; border-spacing:20px; width:90%; margin:0;"> 
+                <div class="projectBox" style="background-image: url('images/ct.png'); background-position:center;" onclick="loadCAD()">
+                    <div>make medical diagnoses?</div>
+                </div>
+                <div class="projectBox" style="background-image: url('images/forest.jpeg'); background-position:center;" onclick="loadEco()">
+                    <p>monitor changing ecosystems?</p>
+                </div>
+
+                <div class="projectBox" style="background-image: url('images/bulb.jpeg'); background-position:center;" onclick="loadSmart()">
+                    <p>conserve energy in smart homes?</p>
+                </div>
+                <br>
+                <div class="projectBox" style="background-image: url('images/heart.jpeg'); background-position:center;" onclick="loadMedicine()">
+                    <p>personalize medicine?</p>
+                </div>
+            </div>
+            
+            <div id="projectTable" style="width:90%; margin:0; margin-left:3%; background-image:url('images/ct.png');">
+                <div id="projectPanel">
+                    <p id="projectTitle"></p> 
+                    <div id="projectDetails" style="display:inline;">
+                        <p id="projectCompany"></p> 
+                        <p id="projectDates"></p> 
+                    </div> 
+                    <div id="projectDescription">
+                        <p id="projectText">
+                        </p>
+                        <ul id="topics" style="text-align:left;">
+                        </ul>
+
+                    </div> 
+                </div>
+                <div id="projectOutcomes">
+                    <button class="outcome">SPIE Medical Imaging 2019</button> 
+                </div> 
+            </div>
+        </div>
+    
