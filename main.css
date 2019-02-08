@@ -1,10 +1,16 @@
 :root {
-    --dark: #770757;
+    --dark: #cf0000;
     --main: #ffccff;
     --master: black;
     --neutral: white; 
 }
 
+#contactBox {
+}
+
+.emph {
+   color:var(--dark);
+}
 
 html, h1, h2, body, form, fieldset, table, tr, td, img {
     font-family: Arial,sans-serif;
