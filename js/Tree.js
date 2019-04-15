@@ -12,7 +12,7 @@ function onload() {
     canvas.height = window.innerHeight;
     canvas.style.top = "0px"; 
     canvas.style.left =" 0px"; 
-    var x = window.innerWidth / 2;
+    var x = window.innerWidth * 3/4;
     var y = window.innerHeight / 2;
     tree = new Tree(new Point(x,window.innerHeight), window.innerHeight, 2, Math.PI/6);
     tree.draw_tree(); 
