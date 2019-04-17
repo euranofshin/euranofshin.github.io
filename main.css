@@ -5,6 +5,10 @@
     --neutral: white; 
 }
 
+a {
+    z-index:15;
+}
+
 #contactBox {
 }
 
