@@ -5,6 +5,7 @@ function onload() {
     $("#resumeLink").click(toResume);
     $("#contactLink").click(toContact);
     $("#projectsLink").click(toProjects);
+    $("#outcomesLink").click(toOutcomes);
     $(".toTop").click(toTop);
 
     canvas = document.getElementById("myCanvas");
@@ -136,6 +137,12 @@ function insertProject() {
 function toProjects() {
     $('html,body').animate({
            scrollTop: $("#projects").offset().top
+    });
+}
+
+function toOutcomes() {
+    $('html,body').animate({
+           scrollTop: $("#outcomes").offset().top
     });
 }
 
@@ -333,7 +340,7 @@ function draw_tree() {
             placement = branchless_trunk + (increment * i * percent);
             //place random branching along spot on trunk
             branch_center = new Point(this.center.x, this.center.y - placement);
-            this.random_flower(branch_center, placement * 0.7, 2, (Math.PI/2));
+            this.random_flower(branch_center, placement * 0.7, 10, (Math.PI/2));
         }
     
         //top of the tree
