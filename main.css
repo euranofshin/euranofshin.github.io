@@ -1,6 +1,6 @@
 :root {
-    --dark: #cf0000;
-    --main: #ffccff;
+    --dark: #001d59;
+    --main: #c9e3ff;
     --master: black;
     --neutral: white; 
 }
@@ -21,6 +21,11 @@ html, h1, h2, body, form, fieldset, table, tr, td, img {
     font-weight:lighter;
 }
 
+html {
+ padding-left:15%; 
+ padding-right:15%;
+}
+
 body{
 overflow-x:hidden;
 }
@@ -34,7 +39,8 @@ overflow-x:hidden;
     height:40px;
     position:fixed;  
     bottom:10px; 
-    right:5px; 
+    right:16%;
+    z-index:6; 
 }
 
 
@@ -140,7 +146,7 @@ li{
 
 .title {
     position:absolute;
-    color:var(--neutral); 
+    color:var(--master); 
 }
 .header {
     text-align:left;
@@ -160,8 +166,7 @@ li{
 }
 #main {
     position:relative;     
-    left:10%; 
-    top:15%;
+    top:10%;
     padding:0px;
 }
 
@@ -176,13 +181,10 @@ h2{
 .section {
     position:relative; 
     background-color:var(--neutral); 
-    width:70%;
     height:100%; 
     text-align:center; 
     margin:0px;
     padding:0px;
-    margin-left:15%;
-    margin-right:15%;
 }
 
 tr {
@@ -202,9 +204,9 @@ tr {
 
 .headlink {
     position:relative;
-    color:var(--neutral);
+    color:var(--master);
     font-size:30px; 
-    background-color:rgba(255,255,255,0.3); 
+    background-color:var(--main); 
     z-index:4;
     margin:5px;
     width:200px;

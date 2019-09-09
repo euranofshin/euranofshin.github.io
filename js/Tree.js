@@ -9,13 +9,13 @@ function onload() {
     $(".toTop").click(toTop);
 
     canvas = document.getElementById("myCanvas");
-    canvas.width = window.innerWidth; 
+    canvas.width = window.innerWidth * 0.7; 
     canvas.height = window.innerHeight;
     canvas.style.top = "0px"; 
-    canvas.style.left =" 0px"; 
-    var x = window.innerWidth * 3/4;
+    canvas.style.left = "0px"; 
+    var x = window.innerWidth * 3/4 * 0.7;
     var y = window.innerHeight / 2;
-    tree = new Tree(new Point(x,window.innerHeight), window.innerHeight, 2, Math.PI/6);
+    tree = new Tree(new Point(x,window.innerHeight), window.innerHeight * 0.8, 5, Math.PI/6);
     tree.draw_tree(); 
 
     //draw the ground 
@@ -23,17 +23,17 @@ function onload() {
     random_koch(0, 49, 50, 0.75, array);
     ctx= document.getElementById("myCanvas").getContext("2d");
     ctx.beginPath();
-    ctx.moveTo(0, window.innerHeight - 30);
-    var x_inc = window.innerWidth/array.length;  
+    ctx.moveTo(0, window.innerHeight - 15);
+    var x_inc = window.innerWidth * 0.7/(array.length + 1);  
     for(var i=0; i<array.length; i++) {
-       ctx.lineTo(x_inc * i, window.innerHeight - Math.abs(array[i] )- 30) 
+       ctx.lineTo(x_inc * i, window.innerHeight - Math.abs(array[i] )- 15) 
     }  
     //complete the square
-    ctx.lineTo(window.innerWidth, window.innerHeight);
-    ctx.fillStyle="#ffffff"
+    ctx.lineTo(window.innerWidth * 0.7, window.innerHeight);
+    ctx.fillStyle="#c9e3ff"
 
     ctx.lineTo(0, window.innerHeight); 
-    ctx.lineTo(0, window.innerHeight - 30); 
+    ctx.lineTo(0, window.innerHeight - 15); 
     ctx.closePath();
     ctx.fill();
     
@@ -65,73 +65,6 @@ function loadPics() {
         picBar.appendChild(img); 
     }
 
-}
-
-function loadCAD() {
-   description =  "During my REU internship at DePaul, I worked on reducing the cost in training a CADx system to recognize lung cancer with Dr. Raicu. Some relevant topics were:";
-   title = "Computer-Aided Diagnosis (CADx) Systems";
-   date = "May 2018 - Present";
-   company = "DePaul University";
-   topics = ["Active learning", "Noisy/imperfect labels", "Measuring uncertainty"
-   , "Weakly supervised learning"];
-   picfile = "images/CT.jpg";
-   outcomes = ['SPIE Medical Imaging 2019'];
-   outLink = ["https://spie.org/MI/conferencedetails/computer-aided-diagnosis#2512803"];
-   insertProject();
-}
-
-function loadEco() {
-   description =  "A food web may be modelled as a mathematical network. This property can be used to compare food webs between ecosystems and learn more about how they are structured and change over time. In my semester abroad at New Zealand, I worked with Dr. Stouffer and Bernat Bramon to explore this concept.";
-   title = "Ecological Network Alignment";
-   date = "Feb. 2018 - May 2018";
-   company = "University of Canterbury";
-   topics = ["Network alignment", "Ecological data"];
-   picfile = "images/FOREST.jpeg";
-   outcomes = ["Class final presentation"]; 
-   insertProject();
-}
-
-function loadSmart() {
-   description = "How do we make smart technology easy to use for everyone? In this project, I work with Dr. Silvestri to make smart home technology marketable by factoring user preferences into the ML system." 
-   title = "Scalable smart outlets";
-   date = "Dec. 2017 - Present";
-   company = "University of Kentucky";
-   topics = ["Stream-based active learning", "Social-behavioral modeling"];
-   picfile = "images/HOME.jpg";
-   outcomes = []; 
-   insertProject();
-
-}
-
-function loadMedicine() {
-   description = "Atrial fibrillation is the most common sustained arrythmia. In this project with Dr. Loewe, we created a simulation of AF on a computational model of the heart."; 
-   title = "Modelling Atrial Fibrillation (AF)";
-   date = "May 2016 - August 2018";
-   company = "Karlsruhe Institute of Technology";
-   topics = ["Computational modelling", "Wave propogation (eikonal equation)"];
-   picfile = "images/HEART.jpeg";
-   outcomes = ["1st Place Kentucky Academy of Sciences 2016"]; 
-   outLink = ["files/Atrial Fibrillation 2016.pdf"];
-   insertProject();
-
-}
-
-function insertProject() {
-   document.getElementById("projectTitle").innerHTML = title; 
-   document.getElementById("projectText").innerHTML = description; 
-   document.getElementById("projectCompany").innerHTML = company; 
-   document.getElementById("projectDates").innerHTML = date; 
-   document.getElementById("projectTable").style.backgroundImage = "url('" + picfile + "')"; 
-   $("#topics").empty();
-   for(var i=0; i<topics.length; i++) {
-      $("#topics").append('<li>' + topics[i] + '</li>');
-   }
-    
-   $("#projectOutcomes").empty();
-   $("#projectOutcomes").append('<p style="font-style:italic; font-size: 25px; color:white;"> Outcomes </p>');
-   for(var i=0; i<outcomes.length; i++) {
-       $("#projectOutcomes").append('<a href="' + outLink[i] + '"> <div class="outcome">' + outcomes[i] + '</div></a>'); 
-   }
 }
 
 function toProjects() {
@@ -202,7 +135,7 @@ function random_koch(left, right, displacement, roughness, array){
 
 function drawline(ctx, p1, p2) {
     ctx= document.getElementById("myCanvas").getContext("2d");
-    ctx.strokeStyle = "#ffffff"
+    ctx.strokeStyle = "#001d59"
     ctx.beginPath();
     ctx.moveTo(p1.x, p1.y); 
     ctx.lineTo(p2.x, p2.y); 
@@ -211,7 +144,7 @@ function drawline(ctx, p1, p2) {
 
 function draw_flower_line(ctx, p1, p2) {
     ctx= document.getElementById("myCanvas").getContext("2d");
-    ctx.strokeStyle = "#ffccff"
+    ctx.strokeStyle = "#c9e3ff"
     ctx.beginPath();
     ctx.moveTo(p1.x, p1.y); 
     ctx.lineTo(p2.x, p2.y); 
