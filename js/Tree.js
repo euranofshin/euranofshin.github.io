@@ -30,7 +30,7 @@ function onload() {
     }  
     //complete the square
     ctx.lineTo(window.innerWidth * 0.7, window.innerHeight);
-    ctx.fillStyle="#c9e3ff"
+    ctx.fillStyle="#000000"
 
     ctx.lineTo(0, window.innerHeight); 
     ctx.lineTo(0, window.innerHeight - 15); 
@@ -135,7 +135,7 @@ function random_koch(left, right, displacement, roughness, array){
 
 function drawline(ctx, p1, p2) {
     ctx= document.getElementById("myCanvas").getContext("2d");
-    ctx.strokeStyle = "#001d59"
+    ctx.strokeStyle = "#000000"
     ctx.beginPath();
     ctx.moveTo(p1.x, p1.y); 
     ctx.lineTo(p2.x, p2.y); 
@@ -144,7 +144,7 @@ function drawline(ctx, p1, p2) {
 
 function draw_flower_line(ctx, p1, p2) {
     ctx= document.getElementById("myCanvas").getContext("2d");
-    ctx.strokeStyle = "#c9e3ff"
+    ctx.strokeStyle = "#167a31"
     ctx.beginPath();
     ctx.moveTo(p1.x, p1.y); 
     ctx.lineTo(p2.x, p2.y); 
