@@ -21,6 +21,19 @@ html, h1, h2, body, form, fieldset, table, tr, td, img {
     font-weight:lighter;
 }
 
+h4 {
+    font-size:0.9vw;
+}
+
+h3 {
+    font-size:1.15vw;
+}
+
+h2 {
+    font-size:1.3vw;
+}
+
+
 html {
  padding-left:15%; 
  padding-right:15%;
@@ -87,7 +100,7 @@ overflow-x:hidden;
 #projectTitle {
     width:100%; 
     font-family:Courier, sans-serif;
-    font-size:25px;     
+    font-size:1.5vw;     
     height:20%;
     border-bottom: solid;
     margin-bottom:20px;
@@ -127,22 +140,8 @@ overflow-x:hidden;
     margin:5%;
 }
 
-li{
-    font-size:14px;
-    list-style-position: inside;
-}
 
-#projectDetails {
-    font-size:18px;
-    height:20%;
-}
 
-#projectDescription {
-    padding:10px;
-    font-size:14px; 
-    height:60%;
-    text-align:left;
-}
 
 .title {
     position:absolute;
@@ -154,7 +153,7 @@ li{
     margin-top:10px;
     font-style:bold; 
     font-family: Courier, sans-serif;
-    font-size:40px;
+    font-size:3vw;
     color:var(--master)
 }
 
@@ -205,7 +204,7 @@ tr {
 .headlink {
     position:relative;
     color:var(--master);
-    font-size:30px; 
+    font-size:1.4vw; 
     background-color:var(--main); 
     z-index:4;
     margin:5px;
