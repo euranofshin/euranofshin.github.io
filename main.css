@@ -1,6 +1,6 @@
 :root {
-    --dark: #2b4f36;
-    --main: #c1d6c7;
+    --dark: #004394;
+    --main: #c0dbfc;
     --master: black;
     --neutral: white; 
 }
@@ -31,6 +31,36 @@ h3 {
 
 h2 {
     font-size:1.3vw;
+}
+
+@media (max-width: 320px) {
+    html {
+        font-size: 16px;
+    }
+    h4 {
+        font-size:13pt;
+    }
+
+    h3 {
+        font-size:15pt;
+    }
+
+    h2 {
+        font-size:17pt;
+    }
+
+    .title {
+        font-size:17pt;
+    }
+
+    #overview {
+        font-size:15pt;
+    }
+
+    .headlink {
+        font-size:15pt;
+    }
+
 }
 
 

@@ -144,7 +144,7 @@ function drawline(ctx, p1, p2) {
 
 function draw_flower_line(ctx, p1, p2) {
     ctx= document.getElementById("myCanvas").getContext("2d");
-    ctx.strokeStyle = "#167a31"
+    ctx.strokeStyle = "#c0dbfc"
     ctx.beginPath();
     ctx.moveTo(p1.x, p1.y); 
     ctx.lineTo(p2.x, p2.y); 
