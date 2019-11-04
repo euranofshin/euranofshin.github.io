@@ -5,6 +5,32 @@
     --neutral: white; 
 }
 
+#nav_bar {
+    background:black;
+    position:fixed; 
+    height:5vh; 
+    width:100%;
+    left:0; 
+    top:0;
+    z-index:10;
+}
+
+.nav_text {
+    color:white; 
+    text-transform:uppercase; 
+    font-style:bold; 
+    font-family: Courier, sans-serif;
+    position:absolute;
+    font-size:2.5vh;
+    text-align: center;
+    padding: 1.25vh 0;
+
+
+    height:5vh;
+
+    z-index:11; 
+}
+
 a {
     z-index:15;
 }
@@ -21,8 +47,11 @@ html, h1, h2, body, form, fieldset, table, tr, td, img {
     font-weight:lighter;
 }
 
+
 h4 {
     font-size:0.9vw;
+    text-align:justify; 
+    line-height:1.5;
 }
 
 h3 {

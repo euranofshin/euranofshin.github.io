@@ -1,12 +1,11 @@
 var description, company, date, title, topics, picfile, outcomes, outLink; 
 
 function onload() {
-    $("#bioLink").click(toBio);
     $("#resumeLink").click(toResume);
     $("#contactLink").click(toContact);
     $("#projectsLink").click(toProjects);
     $("#outcomesLink").click(toOutcomes);
-    $(".toTop").click(toTop);
+    $("#homeLink").click(toTop);
 
     canvas = document.getElementById("myCanvas");
     canvas.width = window.innerWidth * 0.7; 
@@ -69,7 +68,7 @@ function loadPics() {
 
 function toProjects() {
     $('html,body').animate({
-           scrollTop: $("#projects").offset().top
+           scrollTop: $("#projects").offset().top 
     });
 }
 
