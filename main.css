@@ -38,6 +38,12 @@ a {
 #contactBox {
 }
 
+.newspoint {
+    margin-bottom:7px;
+    font-size: (8pt + 0.6vw);
+
+}
+
 .emph {
    color:var(--dark);
 }
