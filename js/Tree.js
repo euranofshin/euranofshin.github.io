@@ -4,17 +4,18 @@ function onload() {
     $("#resumeLink").click(toResume);
     $("#contactLink").click(toContact);
     $("#projectsLink").click(toProjects);
+    $("#blogLink").click(toBlog);
     $("#outcomesLink").click(toOutcomes);
     $("#homeLink").click(toTop);
 
     canvas = document.getElementById("myCanvas");
-    canvas.width = window.innerWidth * 0.7; 
+    canvas.width = window.innerWidth * 0.6; 
     canvas.height = window.innerHeight;
     canvas.style.top = "0px"; 
     canvas.style.left = "0px"; 
-    var x = window.innerWidth * 3/4 * 0.7;
+    var x = window.innerWidth * 3/4 * 0.6;
     var y = window.innerHeight / 2;
-    tree = new Tree(new Point(x,window.innerHeight), window.innerHeight * 0.8, 5, Math.PI/6);
+    tree = new Tree(new Point(x,window.innerHeight), window.innerHeight * 0.75, 5, Math.PI/6);
     tree.draw_tree(); 
 
     //draw the ground 
@@ -23,12 +24,12 @@ function onload() {
     ctx= document.getElementById("myCanvas").getContext("2d");
     ctx.beginPath();
     ctx.moveTo(0, window.innerHeight - 15);
-    var x_inc = window.innerWidth * 0.7/(array.length + 1);  
+    var x_inc = window.innerWidth * 0.6/(array.length + 1);  
     for(var i=0; i<array.length; i++) {
        ctx.lineTo(x_inc * i, window.innerHeight - Math.abs(array[i] )- 15) 
     }  
     //complete the square
-    ctx.lineTo(window.innerWidth * 0.7, window.innerHeight);
+    ctx.lineTo(window.innerWidth * 0.6, window.innerHeight);
     ctx.fillStyle="#000000"
 
     ctx.lineTo(0, window.innerHeight); 
@@ -69,6 +70,12 @@ function loadPics() {
 function toProjects() {
     $('html,body').animate({
            scrollTop: $("#projects").offset().top 
+    });
+}
+
+function toBlog() {
+    $('html,body').animate({
+           scrollTop: $("#blog").offset().top 
     });
 }
 
@@ -272,7 +279,7 @@ function draw_tree() {
             placement = branchless_trunk + (increment * i * percent);
             //place random branching along spot on trunk
             branch_center = new Point(this.center.x, this.center.y - placement);
-            this.random_flower(branch_center, placement * 0.7, 10, (Math.PI/2));
+            this.random_flower(branch_center, placement * 0.6, 10, (Math.PI/2));
         }
     
         //top of the tree
