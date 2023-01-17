@@ -1,6 +1,10 @@
 title: Eura Shin
 logo: /assets/img/logo.jpg
-description: eurashin [at] g [dot] harvard [dot] edu
+email: eurashin [at] g [dot] harvard [dot] edu
 show_downloads: false
+show_links: true
 google_analytics: G-C31QEPL8ER
+google_scholar: https://scholar.google.com/citations?user=NSb27XUAAAAJ&hl=en
+linkedin: https://www.linkedin.com/in/eurashin/
+github: https://github.com/eurashin
 theme: jekyll-theme-minimal
