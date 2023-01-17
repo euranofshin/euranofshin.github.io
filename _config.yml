@@ -1,6 +1,6 @@
 title: Eura Shin
 logo: /assets/img/logo.jpg
 description: eurashin [at] g [dot] harvard [dot] edu
-show_downloads: true
+show_downloads: false
 google_analytics:
 theme: jekyll-theme-minimal
