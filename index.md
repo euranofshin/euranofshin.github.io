@@ -22,3 +22,5 @@ In Spring 2022, I served as a teaching fellow for [STAT234](http://people.seas.h
 
 I serve as a direct research mentor a number of undergraduate and master's students in the intersection of reinforcement learning and human-computer interaction.
 
+# Outreach
+I was one of the founding member of the [University of Kentucky ACM-W](http://acm-w.cs.uky.edu/index.html) chapter. During this time, I created a series of introductory CS workshops for high-school students from counties in Kentucky without a computer science class/program.  
