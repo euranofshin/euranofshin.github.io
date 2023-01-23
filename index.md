@@ -16,4 +16,9 @@ I'm excited about modeling user behavior on mobile health apps, with the goal of
 * [Design and Evaluation of a Hair Combing System Using a General-Purpose Robotic Arm](https://arxiv.org/pdf/2108.01233.pdf). Nathaniel Dennler, **Eura Shin**, Maja Matarić, Stefanos Nikolaidis. International Conference on Intelligent Robots and Systems (IROS) 2021. 
 * [Untangling the seasonal dynamics of plant-pollinator communities.](https://www.nature.com/articles/s41467-020-17894-y) Bernat Bramon Mora, **Eura Shin**, Paul J CaraDonna, Daniel B Stouffer. Nature Communications 2020. 
 
+# Teaching and Mentoring 
+I am a teaching fellow and course developer for [CS290A & CS290B](https://yanivyacoby.github.io/harvard-cs290/): Effective Research Practices & Academic Culture (Fall 2022 - Spring 2023). what is it. We are currently working on making the teaching materials [available online](https://yanivyacoby.github.io/harvard-cs290-teaching-materials/). 
+In Spring 2022, I served as a teaching fellow for [STAT234](http://people.seas.harvard.edu/~samurphy/teaching/stat234spring2022/syllabus.htm): Sequential Decision Making. 
+
+I serve as a direct research mentor a number of undergraduate and master's students in the intersection of reinforcement learning and human-computer interaction.
 
