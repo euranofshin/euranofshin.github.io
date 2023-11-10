@@ -13,7 +13,6 @@ During my CS undergrad at the University of Kentucky, I had the pleasure of work
 **Publications**
 * [Online Model Selection by Learning how Compositional Kernels Evolve.](https://openreview.net/pdf?id=23WZFQBUh5) **Eura Shin**, Predag Klasnja, Susan Murphy, and Finale Doshi-Velez. Transactions on Machine Learning Research 2023.  
 * [Discovering User Types: Mapping User Traits by Task-Specific Behaviors in Reinforcement Learning](https://arxiv.org/abs/2307.08169) Lars L. Ankile, Brian S. Ham, Kevin Mao, **Eura Shin**, Siddharth Swaroop, Finale Doshi-Velez, Weiwei Pan. ICML Workshop on AI and HCI 2023. Best paper nomination. 
-**Eura Shin**, Siddharth Swaroop, Weiwei Pan, Susan Murphy, and Finale Doshi-Velez. 2023 AAAI Workshop on AI for Behavior Change. Contributed talk.  
 * [Modeling Mobile Health Users as Reinforcement Learning Agents.](https://arxiv.org/abs/2212.00863) **Eura Shin**, Siddharth Swaroop, Weiwei Pan, Susan Murphy, and Finale Doshi-Velez. AAAI Workshop on AI for Behavior Change 2023. Contributed talk.  
 * [Online Structural Kernel Selection for Mobile Health](https://arxiv.org/abs/2107.09949). **Eura Shin**, Predag Klasnja, Susan Murphy, and Finale Doshi-Velez. ICML Workshop in Interpretable Machine Learning for Healthcare 2021.
 * [Design and Evaluation of a Hair Combing System Using a General-Purpose Robotic Arm](https://arxiv.org/pdf/2108.01233.pdf). Nathaniel Dennler, **Eura Shin**, Maja Matarić, Stefanos Nikolaidis. International Conference on Intelligent Robots and Systems (IROS) 2021. 
