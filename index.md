@@ -4,7 +4,7 @@ layout: default
 
 
 # About
-I'm a third year PhD candidate in computer science at Harvard University, co-advised by [Finale Doshi-Velez](https://finale.seas.harvard.edu/) (at the [Data to Actionable Knowledge lab](https://dtak.github.io/)) and [Susan Murphy](http://people.seas.harvard.edu/~samurphy/). 
+I'm a fourth year PhD candidate in computer science at Harvard University, co-advised by [Finale Doshi-Velez](https://finale.seas.harvard.edu/) (at the [Data to Actionable Knowledge lab](https://dtak.github.io/)) and [Susan Murphy](http://people.seas.harvard.edu/~samurphy/). 
 I'm excited about modeling user behavior on mobile health apps, with the goal of providing users with personalized interventions. Lately I've been thinking about how to model people's daily decision making processes, surrounding health and behavior change, with reinforcement learning. I am grateful for the support of the [NSF Graduate Research Fellowship](https://www.nsfgrfp.org/). 
 
 During my CS undergrad at the University of Kentucky, I had the pleasure of working with [Simone Silvestri](http://silvestri.engr.uky.edu/) on algorithms for smart home applications. I also participated in some wonderful REU programs at [DePaul University](http://facweb.cs.depaul.edu/research/vc/medix/index.htm) (mentored by Daniela Raicu) and [USC](https://www.cs.usc.edu/reu/) (mentored by Stefanos Nikolaidis). 
