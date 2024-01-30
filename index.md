@@ -11,7 +11,7 @@ During my CS undergrad at the University of Kentucky, I had the pleasure of work
 
 # Research
 **Publications**
-* [AI intervention on boundedly rational human agents in frictionful tasks.]() **Eura Shin**, Siddharth Swaroop, Weiwei Pan, Susan Murphy, and Finale Doshi-Velez. To appear in AAMAS 2024.  
+* [Reinforcement Learning Interventions on Boundedly Rational Human Agents in Frictionful Tasks.](https://arxiv.org/abs/2401.14923) **Eura Shin**, Siddharth Swaroop, Weiwei Pan, Susan Murphy, and Finale Doshi-Velez. To appear in AAMAS 2024.  
 * [Online Model Selection by Learning how Compositional Kernels Evolve.](https://openreview.net/pdf?id=23WZFQBUh5) **Eura Shin**, Predag Klasnja, Susan Murphy, and Finale Doshi-Velez. Transactions on Machine Learning Research 2023.  
 * [Discovering User Types: Mapping User Traits by Task-Specific Behaviors in Reinforcement Learning](https://arxiv.org/abs/2307.08169) Lars L. Ankile, Brian S. Ham, Kevin Mao, **Eura Shin**, Siddharth Swaroop, Finale Doshi-Velez, Weiwei Pan. ICML Workshop on AI and HCI 2023. Best paper nomination. 
 * [Modeling Mobile Health Users as Reinforcement Learning Agents.](https://arxiv.org/abs/2212.00863) **Eura Shin**, Siddharth Swaroop, Weiwei Pan, Susan Murphy, and Finale Doshi-Velez. AAAI Workshop on AI for Behavior Change 2023. Contributed talk.  
