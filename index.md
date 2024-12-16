@@ -5,8 +5,8 @@ layout: default
 
 # About
 I'm a fifth year PhD candidate in computer science at Harvard University, co-advised by [Finale Doshi-Velez](https://finale.seas.harvard.edu/) (at the [Data to Actionable Knowledge lab](https://dtak.github.io/)) and [Susan Murphy](http://people.seas.harvard.edu/~samurphy/). 
-I like to think about how we might leverage insights from behavior science to improve how artificial agents assist human decision-makers. 
-My daily toolkit includes (but is not limited to) reinforcement learning, user studies, and behavior modeling. 
+My research involves leveraging insights from behavior science to improve how artificial agents assist human decision-makers. 
+My daily toolkit includes (but is not limited to) reinforcement learning, user studies, and probabilistic models. 
 I am grateful for the support of the [NSF Graduate Research Fellowship](https://www.nsfgrfp.org/). 
 
 A large part of my work is inspired by [digital interventions](https://www.ifaamas.org/Proceedings/aamas2024/pdfs/p2761.pdf), where we use reinforcement learning to personalize behavioral interventions. For example, planning when to send "reminders to move" on a fitness app. Here, I ask how models from behavior science can provide the inductive bias our algorithm needs to quickly learn the best intervention for each person. 
