@@ -18,7 +18,8 @@ During my CS undergrad at the University of Kentucky, I had the pleasure of work
 
 # Research
 **Publications**
-* [Reinforcement Learning Interventions on Boundedly Rational Human Agents in Frictionful Tasks.](https://arxiv.org/abs/2401.14923) **Eura Shin**, Siddharth Swaroop, Weiwei Pan, Susan Murphy, and Finale Doshi-Velez. International Conference on Autonomous Agents and Multiagent Systems 2024. 
+* [When and Why Hyperbolic Discounting Matters for Reinforcement Learning Interventions](https://rlj.cs.umass.edu/2025/papers/RLJ_RLC_2025_59.pdf). Ian M Moore, **Eura Nofshin**, Siddharth Swaroop, Susan Murphy, Finale Doshi-Velez, Weiwei Pan. Reinforcement Learning Journal 2025. 
+* [Reinforcement Learning Interventions on Boundedly Rational Human Agents in Frictionful Tasks.](https://arxiv.org/abs/2401.14923) **Eura Nofshin**, Siddharth Swaroop, Weiwei Pan, Susan Murphy, and Finale Doshi-Velez. International Conference on Autonomous Agents and Multiagent Systems 2024. 
 * [AMBER: An Entropy Maximizing Environment Design Algorithm for Inverse Reinforcement Learning.](https://openreview.net/pdf?id=diGbG37AxC) Paul Nitschke, Lars Lien Ankile, **Eura Shin**, Siddharth Swaroop, Finale Doshi-Velez, Weiwei Pan. ICML Workshop on Models of Human Feedback for AI Alignment 2024. *(Mentorship role).*
 * [Online Model Selection by Learning how Compositional Kernels Evolve.](https://openreview.net/pdf?id=23WZFQBUh5) **Eura Shin**, Predag Klasnja, Susan Murphy, and Finale Doshi-Velez. Transactions on Machine Learning Research 2023.  
 * [Discovering User Types: Mapping User Traits by Task-Specific Behaviors in Reinforcement Learning](https://arxiv.org/abs/2307.08169) Lars L. Ankile, Brian S. Ham, Kevin Mao, **Eura Shin**, Siddharth Swaroop, Finale Doshi-Velez, Weiwei Pan. ICML Workshop on AI and HCI 2023. Best paper nomination. *(Mentorship role).*
