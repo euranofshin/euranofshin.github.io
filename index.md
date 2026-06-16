@@ -4,17 +4,18 @@ layout: default
 
 
 # About
-I'm a fifth year PhD candidate in computer science at Harvard University, co-advised by [Finale Doshi-Velez](https://finale.seas.harvard.edu/) (at the [Data to Actionable Knowledge lab](https://dtak.github.io/)) and [Susan Murphy](http://people.seas.harvard.edu/~samurphy/). 
+I'm a Postdoctoral researcher at Brown University working with [Serena Booth](https://slbooth.com/). 
 My research involves leveraging insights from behavior science to improve how artificial agents assist human decision-makers. 
 My daily toolkit includes (but is not limited to) reinforcement learning, user studies, and probabilistic models. 
-I am grateful for the support of the [NSF Graduate Research Fellowship](https://www.nsfgrfp.org/). 
 
-A large part of my work is inspired by [digital interventions](https://www.ifaamas.org/Proceedings/aamas2024/pdfs/p2761.pdf), where we use reinforcement learning to personalize behavioral interventions. For example, planning when to send "reminders to move" on a fitness app. Here, I ask how models from behavior science can provide the inductive bias our algorithm needs to quickly learn the best intervention for each person. 
+I completed my PhD in Computer Science at Harvard University and was co-advised by [Finale Doshi-Velez](https://finale.seas.harvard.edu/) and [Susan Murphy](http://people.seas.harvard.edu/~samurphy/). 
+
+
+<!--A large part of my work is inspired by [digital interventions](https://www.ifaamas.org/Proceedings/aamas2024/pdfs/p2761.pdf), where we use reinforcement learning to personalize behavioral interventions. For example, planning when to send "reminders to move" on a fitness app. Here, I ask how models from behavior science can provide the inductive bias our algorithm needs to quickly learn the best intervention for each person. 
 Another part of my work involves [explainable AI](https://arxiv.org/pdf/2406.00116), where we investigate whether different downstream tasks require different explanation properties.
-Here, I ask how human models can be used to simulate user studies, which help us narrow in on the most promising property-task relationships prior to verification with real humans. 
+Here, I ask how human models can be used to simulate user studies, which help us narrow in on the most promising property-task relationships prior to verification with real humans. -->
 
-
-During my CS undergrad at the University of Kentucky, I had the pleasure of working with [Simone Silvestri](http://silvestri.engr.uky.edu/) on algorithms for smart home applications. I also participated in some wonderful REU programs at [DePaul University](http://facweb.cs.depaul.edu/research/vc/medix/index.htm) (mentored by Daniela Raicu) and [USC](https://www.cs.usc.edu/reu/) (mentored by Stefanos Nikolaidis). 
+<!--During my CS undergrad at the University of Kentucky, I had the pleasure of working with [Simone Silvestri](http://silvestri.engr.uky.edu/) on algorithms for smart home applications. I also participated in some wonderful REU programs at [DePaul University](http://facweb.cs.depaul.edu/research/vc/medix/index.htm) (mentored by Daniela Raicu) and [USC](https://www.cs.usc.edu/reu/) (mentored by Stefanos Nikolaidis).-->
 
 # Research
 **Publications**
